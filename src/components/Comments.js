@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
-import video from "../data/video.js"
+// import video from "../data/video.js"
 
-function Comments ({ comments }) {
+function Comments ({ video }) {
   const commentsInfo = video.comments.map((comment) => (
     <div key={comment.id}>
     <h2>{comment.user}</h2>
@@ -19,7 +19,8 @@ function Comments ({ comments }) {
             <h2>{video.comments.length} Comments</h2>
             
                 <ul>
-                    {showComments && commentsInfo}
+                    {/* {showComments && commentsInfo} */}
+                    {showComments ? commentsInfo : null}
                 </ul>
             
         </div>

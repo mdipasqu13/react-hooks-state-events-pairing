@@ -1,8 +1,8 @@
 import React from 'react'
-import video from "../data/video.js"
+// import video from "../data/video.js"
 
 
-function Header () {
+function Header ({video}) {
     return (
         <div>
         <h1>{video.title}</h1>

@@ -9,10 +9,10 @@ function App() {
 
   return (
     <div className="App">
-      <Video />
-      <Header />
-      <Buttons />
-      <Comments />
+      <Video video={ video }/>
+      <Header video={ video} />
+      <Buttons video={ video } />
+      <Comments video={ video }/>
     </div>
   );
 }

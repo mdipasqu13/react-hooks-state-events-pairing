@@ -1,7 +1,7 @@
 import React from "react"
-import video from '../data/video.js'
+// import video from '../data/video.js'
 
-function Video () {
+function Video ( {video}) {
     return (
         <iframe
         width="919"
